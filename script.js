@@ -45,16 +45,89 @@
 
 // övning 4
 
-function validatePassword(password) {
-    if (password.length < 8) {
-        return 'Password is not long enough';
-    } if (!/\d/.test(password)) {
-        return 'Password must conatin one digit';
-    } if (!/[A-Z]/.test(password)) {
-        return 'Password must contain one uppercase letter';
-    } return 'Password is accepted';
+// function validatePassword(password) {
+//     if (password.length < 8) {
+//         return 'Password is not long enough';
+//     } if (!/\d/.test(password)) {
+//         return 'Password must conatin one digit';
+//     } if (!/[A-Z]/.test(password)) {
+//         return 'Password must contain one uppercase letter';
+//     } return 'Password is accepted';
+// }
+
+// let password = prompt('Enter a password');
+
+// alert(validatePassword(password));
+
+
+// övning 5 
+
+// let trafficLight = prompt('Please write a traffic light colour: "red", "yellow", or "green"').toLocaleLowerCase();
+
+// if (trafficLight === 'red') {
+//     console.log('Stop!');
+// } else if (trafficLight === 'yellow') {
+//     console.log('Prepare to stop!');
+// } else if (trafficLight === 'green') {
+//     console.log('Run!');
+// } else {
+//     console.log('Please choose one of the three options');
+// }
+
+// övning 6
+
+// let num = Number(prompt('Please enter a number between 0 and 5:'));
+
+// switch (num){
+//     case 0:
+//         num = 'Zero';
+//         break;
+//     case 1:
+//         num = 'One';
+//         break;
+//     case 2:
+//         num = 'Two';
+//         break;
+//     case 3:
+//         num = 'Three';
+//         break;
+//     case 4:
+//         num = 'Four';
+//         break; 
+//     case 5:
+//         num = 'Five';
+//         break;
+//     default:
+//         num = 'Please enter a vaild number between 0 and 5';      
+// }
+
+// console.log(`${num}`);
+
+// övning 7
+
+function calculate(weight, planet) {
+    let gravity;
+    if (planet.toLowerCase() === 'mars') {
+        gravity = 0.38;
+    } else if (planet.toLowerCase() === 'jupiter') {
+        gravity = 2.34;
+    } else if (planet.toLowerCase() === 'moon') {
+        gravity = 0.16;
+    } else {
+        return 'Invalid planet, please choose from the three already suggested';
+    }
+
+    let planetWeight = weight * gravity;
+    return `Your weight on ${planet} would be ${planetWeight.toFixed(2)} kg!`;
 }
 
-let password = prompt('Enter a password');
+let weight = parseFloat(prompt('Enter your weight in kg:'));
+let planet = prompt('Enter the name of one of the planets listed: Mars, Jupiter, or Moon');
 
-alert(validatePassword(password));
+if (isNaN(weight) || weight <= 0) {
+    alert('enter a valid number!');
+}
+
+let result = calculate(weight, planet);
+console.log(result);
+alert(result);
