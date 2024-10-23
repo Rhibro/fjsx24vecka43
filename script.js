@@ -190,3 +190,77 @@
 // }
 
 // övning 11 
+
+// let selectedDish = Number(prompt('Please choose a dish by entering its number: 1 for potatoes, 2 for beets, 3 for apples'));
+// let potatoes = '$5';
+// let beets = '$3';
+// let apples = '$20,000';
+
+// if (selectedDish === 1) {
+//     console.log(`You chose potatoes, that will cost ${potatoes}`);
+// }else if (selectedDish === 2) {
+//     console.log(`You chose beets, that will cost ${beets}`);
+// }else if (selectedDish === 3) {
+//     console.log(`You chose apples, that will cost ${apples}`);
+// }else{
+//     console.log('You did not choose form the list, please try again.');
+// }
+
+// övning 12
+
+//  let userSpeed = Number(prompt('Please enter your speed:'));
+
+// if (userSpeed > 120) {
+//     console.log('Too fast!');
+// }else if (userSpeed < 120 && userSpeed > 79) {
+//     console.log('Approved speed');
+// }else if (userSpeed < 80) {
+//     console.log('Too slow');
+// }
+
+// userSpeed > 120 
+//     ? console.log('Too fast!')
+//     : userSpeed > 79 
+//     ? console.log('Approved speed')
+//     :console.log('Too slow');
+
+
+// övning 13
+
+// let sek = Number(prompt('Enter amount in SEK:'));
+// let conversionRate = 10; // 1 EUR = 10 SEK
+
+// let inEur = sek / conversionRate;
+// // formatted to 2 decimal places
+// console.log(`The amount in EUR is ${inEur.toFixed(2)}`);
+
+
+// övning 14
+
+// let userAge = Number(prompt('enter your age:'));
+
+//     userAge < 13
+//         ? console.log('Animated Movie!')
+//         : userAge > 13 && userAge < 18       
+//         ? console.log('Youth Film')
+//         : console.log('Adult Film');
+
+// övning 15
+
+// let num1 = Math.floor(Math.random() * 10) + 1;
+// let num2 = Math.floor(Math.random() * 10) + 1;
+
+// let userSvar = Number(prompt(`What is ${num1} * ${num2}?`));
+
+// let correctSvar = num1 * num2;
+
+// if (userSvar === correctSvar) {
+//     console.log('Correct!');
+// }else{
+//     console.log(`Incorrect! The correct anwser was ${correctSvar}`);
+// }
+
+// övning 16
+
+
+
