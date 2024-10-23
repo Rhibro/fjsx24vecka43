@@ -59,7 +59,6 @@
 
 // alert(validatePassword(password));
 
-
 // övning 5 
 
 // let trafficLight = prompt('Please write a traffic light colour: "red", "yellow", or "green"').toLocaleLowerCase();
@@ -105,29 +104,89 @@
 
 // övning 7
 
-function calculate(weight, planet) {
-    let gravity;
-    if (planet.toLowerCase() === 'mars') {
-        gravity = 0.38;
-    } else if (planet.toLowerCase() === 'jupiter') {
-        gravity = 2.34;
-    } else if (planet.toLowerCase() === 'moon') {
-        gravity = 0.16;
-    } else {
-        return 'Invalid planet, please choose from the three already suggested';
-    }
+// function calculate(weight, planet) {
+//     let gravity;
+//     if (planet.toLowerCase() === 'mars') {
+//         gravity = 0.38;
+//     } else if (planet.toLowerCase() === 'jupiter') {
+//         gravity = 2.34;
+//     } else if (planet.toLowerCase() === 'moon') {
+//         gravity = 0.16;
+//     } else {
+//         return 'Invalid planet, please choose from the three already suggested';
+//     }
 
-    let planetWeight = weight * gravity;
-    return `Your weight on ${planet} would be ${planetWeight.toFixed(2)} kg!`;
-}
+//     let planetWeight = weight * gravity;
+//     return `Your weight on ${planet} would be ${planetWeight.toFixed(2)} kg!`;
+// }
 
-let weight = parseFloat(prompt('Enter your weight in kg:'));
-let planet = prompt('Enter the name of one of the planets listed: Mars, Jupiter, or Moon');
+// let weight = parseFloat(prompt('Enter your weight in kg:'));
+// let planet = prompt('Enter the name of one of the planets listed: Mars, Jupiter, or Moon');
 
-if (isNaN(weight) || weight <= 0) {
-    alert('enter a valid number!');
-}
+// if (isNaN(weight) || weight <= 0) {
+//     alert('enter a valid number!');
+// }
 
-let result = calculate(weight, planet);
-console.log(result);
-alert(result);
+// let result = calculate(weight, planet);
+// console.log(result);
+// alert(result);
+
+// övning 8 
+
+// let question1 = prompt('Name the largest country by size:').toLocaleLowerCase();
+// let question2 = prompt('Name the second largest country by size:').toLocaleLowerCase();
+// let question3 = prompt('Name the third largest country by size:').toLocaleLowerCase();
+
+// let point1 = 0;
+// let point2 = 0;
+// let point3 = 0;
+
+
+// if (question1 === 'russia') {
+//     point1 = 1;
+// } 
+
+// if (question2 === 'canada') {
+//     point2 = 1;
+// } 
+
+// if (question3 === 'china') {
+//     point3 = 1;
+// } 
+
+// let finalPoints = point1 + point2 + point3;
+
+// console.log(`You got ${finalPoints} points`);
+
+// övning 9 
+
+// let email = prompt('Please enter your email:');
+
+// if (email.includes('@') && email.includes('.')) {
+//     console.log('The email is valid');
+// } else {
+//     console.log('The email is invalid');
+// }
+
+// övning 10 
+
+// let pin = '1234'; // correct pin
+// let attempts = 3; // how many attempts you have to write the right pin
+// let userPin; // to store user input
+
+// for (let i = 0; i < attempts; i++) {
+//     userPin = prompt('Enter your pin:');
+
+//     if (userPin === pin) {
+//         console.log('Welcome!');
+//         break; // exit the loop if the pin is correct
+//     }else{
+//         console.log(`Incorrect pin. You have ${attempts - (i + 1)} attempt(s) left.`);
+//     }
+
+//     if (i === attempts - 1) {
+//         console.log('Card blocked.');
+//     }
+// }
+
+// övning 11 
