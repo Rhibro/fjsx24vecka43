@@ -262,5 +262,61 @@
 
 // övning 16
 
+// Ask the user for inputs
+// let distanceInKm = Number(prompt('Enter the distance in kilometers:'));
+// let fuelConsumptionPerMile = Number(prompt('Enter the fuel consumption in liters per mile:'));
+// let fuelPricePerLiter = Number(prompt('Enter the fuel price per liter:'));
+
+// // 1 mile = 10 km, so convert distance from kilometers to miles
+// let distanceInMiles = distanceInKm / 10;
+
+// // Validate the inputs
+// if (distanceInKm > 0 && fuelConsumptionPerMile > 0 && fuelPricePerLiter > 0) {
+//     // Calculate total fuel needed (fuel consumption per mile * distance in miles)
+//     let totalFuelNeeded = fuelConsumptionPerMile * distanceInMiles;
+    
+//     // Calculate total cost (total fuel needed * fuel price per liter)
+//     let totalCost = totalFuelNeeded * fuelPricePerLiter;
+
+//     // Print the total cost, formatted to 2 decimal places
+//     console.log(`The total travel cost is: ${totalCost.toFixed(2)} units of currency`);
+// } else {
+//     console.log('Please enter valid positive numbers for distance, fuel consumption, and fuel price.');
+// }
 
 
+// övning 17
+
+// let word1 = prompt('enter a word:').toLocaleLowerCase();
+// let word2 = prompt('enter a word:').toLocaleLowerCase();
+
+// function sortWord(word) {
+//     return word.split('').sort().join('');
+// }
+
+// if (sortWord(word1) === sortWord(word2)) {
+//     console.log('Anagrams!');
+// } else {
+//     console.log('Not anagrams.');   
+// }
+
+//övning 18
+
+let randomNumber = Math.floor(Math.random() * 50) + 1;
+let attempts = 5;
+for (let i = 0; i < attempts; i++) {
+    let guess = Number(prompt(`Guess a number between 1-50. You have ${attempts} attempts.`));
+
+    if (guess === randomNumber) {
+        console.log('Congarts, you guessed it!');
+        break;
+    } else if (guess < randomNumber) {
+        console.log('Too low!');
+    } else if (guess > randomNumber){
+        console.log('Too high!');
+    }
+
+    if (i === attempts - 1) {
+        console.log(`You lose, the correct number was ${randomNumber}`);
+    }
+}
