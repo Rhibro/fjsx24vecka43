@@ -1,3 +1,5 @@
+// TISDAG 22OKT V43 ÖVNINGAR
+
 // övning 1
 
 // let temp = Number(prompt('Please enter a temp in Celsius:'))
@@ -302,21 +304,24 @@
 
 //övning 18
 
-let randomNumber = Math.floor(Math.random() * 50) + 1;
-let attempts = 5;
-for (let i = 0; i < attempts; i++) {
-    let guess = Number(prompt(`Guess a number between 1-50. You have ${attempts} attempts.`));
+// let randomNumber = Math.floor(Math.random() * 50) + 1;
+// let attempts = 5;
+// for (let i = 0; i < attempts; i++) {
+//     let guess = Number(prompt(`Guess a number between 1-50. You have ${attempts} attempts.`));
 
-    if (guess === randomNumber) {
-        console.log('Congarts, you guessed it!');
-        break;
-    } else if (guess < randomNumber) {
-        console.log('Too low!');
-    } else if (guess > randomNumber){
-        console.log('Too high!');
-    }
+//     if (guess === randomNumber) {
+//         console.log('Congarts, you guessed it!');
+//         break;
+//     } else if (guess < randomNumber) {
+//         console.log('Too low!');
+//     } else if (guess > randomNumber){
+//         console.log('Too high!');
+//     }
 
-    if (i === attempts - 1) {
-        console.log(`You lose, the correct number was ${randomNumber}`);
-    }
-}
+//     if (i === attempts - 1) {
+//         console.log(`You lose, the correct number was ${randomNumber}`);
+//     }
+// }
+
+
+
